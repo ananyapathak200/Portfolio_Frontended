@@ -1,0 +1,84 @@
+# 📁 Portfolio Website – Customization Guide
+
+## 📂 Files
+- `index.html` – All sections & structure
+- `style.css` – All styling & colors
+- `script.js` – Interactivity (typewriter, scroll, certificates)
+
+---
+
+## ✏️ How to Customize
+
+### 1. Your Name & Info
+- Open `index.html`
+- Search for `Your Name` → replace with your real name
+- Update `your@email.com` with your actual email
+- Update `+91 XXXXXXXXXX` with your phone number
+- Update `Your City, India` with your location
+
+### 2. Profile Photo (Hero Section)
+- Replace the `.hero-img-placeholder` div with:
+  ```html
+  <img src="photo.jpg" alt="Your Name" style="width:260px;height:260px;border-radius:50%;object-fit:cover;"/>
+  ```
+
+### 3. Social Links
+- Find `<a href="#">` inside `.social-row` (GitHub, LinkedIn, Twitter)
+- Replace `#` with your actual profile URLs
+
+### 4. Skills – Update Percentages
+- Find `.skill-bar-wrap` entries in `index.html`
+- Change `style="--w:90%"` to your actual skill level
+
+### 5. Education
+- Update school/college names, boards, years, percentages
+- Update SGPA values for each semester
+
+### 6. Projects
+- Find `.project-card` sections
+- Update title, description, tags
+- Replace `href="#"` with your live demo and GitHub URLs
+- To add a real screenshot:
+  ```html
+  <img src="project1.png" alt="Project 1" style="width:100%;height:100%;object-fit:cover;"/>
+  ```
+
+### 7. Certificates (Easy Upload!)
+- Just **click any certificate card** in the browser
+- A file picker opens → select your certificate image (PNG/JPG)
+- The image loads instantly!
+- You can also **click the image** to zoom into fullscreen
+- **Edit the title/issuer** directly by clicking on the text (it's contenteditable)
+
+### 8. Contact Form
+- Currently shows a success message (no backend)
+- To actually send emails, integrate with [EmailJS](https://emailjs.com) or [Formspree](https://formspree.io)
+
+### 9. Download CV Button
+- Update the `<a href="#" download>` tag to point to your actual PDF:
+  ```html
+  <a href="resume.pdf" class="btn-primary" download>⬇ Download CV</a>
+  ```
+
+---
+
+## 🎨 Color Customization (style.css)
+Edit CSS variables at the top of `style.css`:
+```css
+--accent: #00d4ff;      /* Cyan – main accent */
+--accent2: #7c3aed;     /* Purple – secondary */
+--accent3: #f59e0b;     /* Amber – education badges */
+--bg: #0a0e1a;          /* Main background */
+--card: #141b2d;        /* Card background */
+```
+
+---
+
+## 🚀 How to Deploy (Free)
+1. **GitHub Pages**: Push to GitHub → Settings → Pages → Deploy
+2. **Netlify**: Drag & drop the folder at netlify.com
+3. **Vercel**: Connect GitHub repo at vercel.com
+
+---
+
+Built with ❤️ using HTML, CSS & JavaScript — No frameworks needed!
