@@ -162,7 +162,7 @@ function handleSubmit(e) {
   btn.textContent = 'Sending...';
   btn.disabled = true;
 
-  fetch("http://localhost:8082/api/contact", {
+  fetch("https://prtfolio-backendd-9.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
